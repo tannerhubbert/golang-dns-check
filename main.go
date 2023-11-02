@@ -16,5 +16,5 @@ func main() {
 	fmt.Scanf("%s", &domain)
 	a, err := dig.A(domain)
 	fmt.Println(a, err)
-	time.Sleep(time.Duration(math.MaxInt64))
+	//time.Sleep(time.Duration(math.MaxInt64))
 }
