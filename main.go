@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"math"
+	"time"
 
 	"github.com/lixiangzhong/dnsutil"
 )
@@ -14,4 +16,5 @@ func main() {
 	fmt.Scanf("%s", &domain)
 	a, err := dig.A(domain)
 	fmt.Println(a, err)
+	time.Sleep(time.Duration(math.MaxInt64))
 }
